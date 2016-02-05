@@ -1,8 +1,8 @@
 
-import binascii
+import binascii, sys
 
 #Reading Binary file
-filePath='japanese_in.txt'
+filePath=sys.argv[1]
 fin=open(filePath,'rb')
 twoBytes=list()
 fin.seek(0)
