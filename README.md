@@ -34,7 +34,7 @@ label_a label_b path2
 In the above format, label_a is either “truthful” or “deceptive”, label_b is either “positive” or “negative”, and pathn is the path of the text file being classified.
 
 ###How to run:  
-> python nblearn.py path/to/trainingData  
-> python nbclassify.py path/to/testData
+> python nblearn.py /path/to/trainingData  
+> python nbclassify.py /path/to/testData
 
 
