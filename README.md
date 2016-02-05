@@ -21,4 +21,20 @@ Attached sample files.
 > python utf8encoder.py /path/to/input
 
 ##Assignment 2
-A naive Bayes classifier to identify hotel reviews as either truthful or deceptive, and either positive or negative.
+A naive Bayes classifier to identify hotel reviews as either truthful or deceptive, and either positive or negative using add-one smoothing on training data. Two programs: nblearn.py will learn a naive Bayes model from the training data, and nbclassify.py will use the model to classify new data.
+
+###Training data format:
+A top-level directory with two sub-directories, one for positive reviews and another for negative reviews. Each of the subdirectories contains two sub-directories, one with truthful reviews and one with deceptive reviews. Each of these subdirectories contains any level of subdirectories of text files or text files with one review per file. (Readme file excluded)
+
+###Output format:  
+label_a label_b path1  
+label_a label_b path2  
+⋮  
+
+In the above format, label_a is either “truthful” or “deceptive”, label_b is either “positive” or “negative”, and pathn is the path of the text file being classified.
+
+###How to run:  
+python nblearn.py <path to training data>  
+python nbclassify.py <path to test data>
+
+
