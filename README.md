@@ -38,7 +38,7 @@ A file with tagged training data in the word/TAG format, with words separated by
 A file with tagged data in the word/TAG format, with words separated by spaces and each sentence on a new line.
 
 ###How to run:
-> python hmmlearn.py /path/to/trainingData
+> python hmmlearn.py /path/to/trainingData  
 > python hmmdecode.py /path/to/testData
 
 
