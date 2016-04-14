@@ -28,4 +28,17 @@ In the above format, label_a is either “truthful” or “deceptive”, label_
 > python nblearn.py /path/to/trainingData  
 > python nbclassify.py /path/to/testData
 
+##Hidden Markov Model part-of-speech tagger 
+Given a sequence of words a Hidden Markov Model tagger finds the most likely sequence of part of speech tags that generates that sequence of words using viterbi algorithm. The program uses add-one smoothing on the transition probabilities and no smoothing on the emission probabilities. For unknown words the program will ignore the emission probabilities and use only the transition probabilities.
+
+###Training data format:
+A file with tagged training data in the word/TAG format, with words separated by spaces and each sentence on a new line.
+
+###Output format:
+A file with tagged data in the word/TAG format, with words separated by spaces and each sentence on a new line.
+
+###How to run:
+> python hmmlearn.py /path/to/trainingData
+> python hmmdecode.py /path/to/testData
+
 
